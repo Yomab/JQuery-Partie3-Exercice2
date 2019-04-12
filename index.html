@@ -9,12 +9,30 @@
 
 <script src="assets\js\jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+  $("#bouton").click(function(){
+  });
+  var clic = 0;
+  function onClick() {
+  clic += 1;
+  document.getElementById("clics").innerHTML = clic;
+  };
+
+  $("#bouton").click(function(){
+  });
+
+  function onClick2() {
+  clic -= 1;
+  document.getElementById("clics").innerHTML = clic;
+  };
+  </script>
+  <button type="button" onClick="onClick()">+</button>
+  <button type="button" onClick="onClick2()">-</button>
+  <p>Clics: <a id="clics">0</a></p>
 
 
 
 
 
-</script>
 
 </body>
 </html>
